@@ -1,7 +1,7 @@
 find_package(OpenGL REQUIRED)
 
 add_executable(${PROJECT_NAME}
-   example.cpp
+   practice/LegacyTriangle.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE
