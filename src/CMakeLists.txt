@@ -1,7 +1,7 @@
 find_package(OpenGL REQUIRED)
 
 add_executable(${PROJECT_NAME}
-   practice/LegacyTriangle.cpp
+   practice/ModernTriangle.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE
@@ -11,4 +11,4 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 
 set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build/bin)
 
-target_link_libraries(${PROJECT_NAME} PRIVATE OpenGL::GL glfw)
+target_link_libraries(${PROJECT_NAME} PRIVATE OpenGL::GL glfw glad)

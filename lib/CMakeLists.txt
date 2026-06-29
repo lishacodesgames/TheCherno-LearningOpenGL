@@ -1,6 +1,6 @@
 set(GLFW_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/GLFW/CMakeLists.txt)
 set(GLAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/GLAD/CMakeLists.txt)
-if(NOT EXISTS ${GLFW_DIR} OR NOT EXISTS {GLAD_DIR})
+if(NOT EXISTS ${GLFW_DIR} OR NOT EXISTS ${GLAD_DIR})
    message(NOTICE "!! Submodule is empty !!")
    message(STATUS "Updating submodule now...\n")
    
