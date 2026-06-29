@@ -1,3 +1,6 @@
 [submodule "glfw"]
 	path = lib/external/GLFW
 	url = https://github.com/lishacodesgames/slim-glfw.git
+[submodule "glad"]
+	path = lib/external/GLAD
+	url = https://github.com/lishacodesgames/glad-submodule.git

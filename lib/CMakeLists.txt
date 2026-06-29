@@ -1,5 +1,7 @@
-if(NOT EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/external/GLFW/CMakeLists.txt)
-   message(NOTICE "!! GLFW submodule is empty !!")
+set(GLFW_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/GLFW/CMakeLists.txt)
+set(GLAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/GLAD/CMakeLists.txt)
+if(NOT EXISTS ${GLFW_DIR} OR NOT EXISTS {GLAD_DIR})
+   message(NOTICE "!! Submodule is empty !!")
    message(STATUS "Updating submodule now...\n")
    
    find_package(Git REQUIRED)
@@ -19,3 +21,4 @@ endif()
 
 set(GLFW_INSTALL OFF CACHE INTERNAL "Generate installation target")
 add_subdirectory(external/GLFW)
+add_subdirectory(external/GLAD)

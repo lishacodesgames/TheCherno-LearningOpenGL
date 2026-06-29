@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(Learning_OpenGL LANGUAGES C CXX)
+project(LearningOpenGL LANGUAGES C CXX)
 
 # Print the compiler path
 message(STATUS "C Compiler:   ${CMAKE_C_COMPILER}")
